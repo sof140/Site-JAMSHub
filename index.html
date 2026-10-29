@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAMS Hub</title>
+  <meta name="description" content="Automatize processos e conecte financeiro, vendas, estoque e RH em um único sistema." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="JAMS-logo - Copia.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo">
+        <img class="logo__mark" src="JAMS-logo - Copia.png" alt=""> JAMS HUB
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#recursos">Recursos</a>
+        <a href="#integracao">Integração</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#numeros">Resultados</a>
+      </nav>
+      <div class="nav__cta">
+        <a href="#contato" class="btn btn--primary">Comece agora</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__grid"></div>
+    <div class="container hero__content">
+     
+      <h1 class="hero__title reveal">
+        O sistema que conecta<br />
+        <span class="gradient-text">todos os setores</span> da sua empresa
+      </h1>
+      <p class="hero__subtitle reveal">
+        Automatize processos, elimine retrabalho e faça financeiro, vendas, estoque e RH
+        conversarem em tempo real. Tudo em um único lugar.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#contato" class="btn btn--primary btn--lg">Começar agora</a>
+        <a href="#como-funciona" class="btn btn--outline btn--lg">
+          <span class="play">▶</span> Ver como funciona
+        </a>
+      </div>
+
+      <!-- MOCKUP DO PAINEL -->
+      <div class="mockup reveal">
+        <div class="mockup__bar">
+          <span></span><span></span><span></span>
+          <div class="mockup__url">app.jams.com/dashboard</div>
+        </div>
+        <div class="mockup__body">
+          <aside class="mockup__side">
+            <div class="side__item side__item--active">◈ Visão geral</div>
+            <div class="side__item">◇ Produtos</div>
+            <div class="side__item">◇ CLientes</div>
+            <div class="side__item">◇ Estoque</div>
+            <div class="side__item">◇ Automações</div>
+          </aside>
+          <main class="mockup__main">
+            <div class="kpis">
+              <div class="kpi"><small>Processos automáticos</small><strong>1.248</strong><em class="up">▲ 12%</em></div>
+              <div class="kpi"><small>Horas economizadas</small><strong>386h</strong><em class="up">▲ 28%</em></div>
+              <div class="kpi"><small>Setores integrados</small><strong>6</strong><em class="up">● ativo</em></div>
+            </div>
+            <div class="chart">
+              <div class="bar" style="--h:40%"></div>
+              <div class="bar" style="--h:62%"></div>
+              <div class="bar" style="--h:48%"></div>
+              <div class="bar" style="--h:75%"></div>
+              <div class="bar" style="--h:58%"></div>
+              <div class="bar" style="--h:88%"></div>
+              <div class="bar" style="--h:70%"></div>
+              <div class="bar" style="--h:95%"></div>
+            </div>
+            <div class="log">
+              <div><span class="dot dot--green"></span> Pedido #4821 aprovado → Estoque atualizado</div>
+              <div><span class="dot dot--blue"></span> Nota fiscal emitida → Financeiro notificado</div>
+              <div><span class="dot dot--purple"></span> Novo colaborador → Acessos criados</div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA DE SETORES -->
+  <section class="strip">
+    <div class="container">
+      <p class="strip__label">Integra os principais setores da sua operação</p>
+      <div class="strip__items">
+        <span>Financeiro</span><span>Vendas</span><span>Estoque</span>
+        <span>RH</span><span>Logística</span><span>Atendimento</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS (BENTO) -->
+  <section class="section" id="recursos">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Recursos</span>
+        <h2>Feito para empresas que não querem <span class="gradient-text">perder tempo</span></h2>
+        <p>Menos planilhas, menos e-mails, menos erros. Mais fluxo entre as áreas.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--wide reveal" data-glow>
+          
+          <h3>Automação de processos</h3>
+          <p>Crie regras do tipo "quando isso acontecer, faça aquilo" e deixe o sistema executar tarefas repetitivas por você, 24 horas por dia.</p>
+          <div class="code">
+            <span class="c-key">quando</span> pedido.aprovado<br />
+            &nbsp;&nbsp;<span class="c-fn">atualizar</span>(estoque)<br />
+            &nbsp;&nbsp;<span class="c-fn">emitir</span>(nota_fiscal)<br />
+            &nbsp;&nbsp;<span class="c-fn">notificar</span>(financeiro)
+          </div>
+        </article>
+
+        <article class="card reveal" data-glow>
+    
+          <h3>Integração entre setores</h3>
+          <p>Dados fluem entre as áreas sem digitação manual e sem informação duplicada.</p>
+        </article>
+
+        <article class="card reveal" data-glow>
+          <h3>Dashboards em tempo real</h3>
+          <p>Indicadores atualizados na hora para decisões mais rápidas e seguras.</p>
+        </article>
+
+        <article class="card reveal" data-glow>
+          <h3>Segurança e permissões</h3>
+          <p>Controle de acesso por cargo e registro completo de tudo o que acontece.</p>
+        </article>
+
+        <article class="card card--wide reveal" data-glow>
+          <h3>Conecta com o que você já usa</h3>
+          <p>Integra com seus sistemas atuais, como ERP, CRM, planilhas e APIs, sem precisar começar do zero.</p>
+          <div class="tags">
+            <span>API REST</span><span>Webhooks</span><span>ERP</span><span>CRM</span><span>Excel / CSV</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRAÇÃO (DIAGRAMA) -->
+  <section class="section section--dark" id="integracao">
+    <div class="container split">
+      <div class="split__text reveal">
+        <span class="eyebrow">Integração</span>
+        <h2>Um núcleo central. <span class="gradient-text">Todos os setores conectados.</span></h2>
+        <p>
+          Em vez de cada área trabalhar isolada, o JAMS Hub funciona como o centro da operação:
+          cada ação em um setor dispara automaticamente as ações necessárias nos outros.
+        </p>
+        <ul class="checks">
+          <li>Fim do retrabalho e da digitação duplicada</li>
+          <li>Informação única e confiável para todos</li>
+          <li>Menos erros, mais velocidade</li>
+        </ul>
+      </div>
+
+      <div class="orbit reveal">
+        <div class="orbit__ring orbit__ring--1"></div>
+        <div class="orbit__ring orbit__ring--2"></div>
+        <div class="orbit__core">JAMS</div>
+        <div class="node n1">Produtos</div>
+        <div class="node n2">Clientes</div>
+        <div class="node n3">Estoque</div>
+        <div class="node n4">RH</div>
+        <div class="node n5">Logística</div>
+        <div class="node n6">Suporte</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do zero à operação automatizada em <span class="gradient-text">3 passos</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal" data-glow>
+          <span class="step__num">01</span>
+          <h3>Conecte</h3>
+          <p>Ligue seus setores e sistemas atuais ao Nexo de forma simples e rápida.</p>
+        </div>
+        <div class="step reveal" data-glow>
+          <span class="step__num">02</span>
+          <h3>Configure</h3>
+          <p>Defina as regras e os fluxos que serão executados automaticamente.</p>
+        </div>
+        <div class="step reveal" data-glow>
+          <span class="step__num">03</span>
+          <h3>Automatize</h3>
+          <p>Acompanhe tudo em tempo real e ganhe horas de trabalho todos os dias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="section section--dark" id="numeros">
+    <div class="container">
+      <div class="stats">
+        <div class="stat reveal"><strong data-count="70" data-suffix="%">0</strong><span>menos tarefas manuais</span></div>
+        <div class="stat reveal"><strong data-count="6" data-suffix="+">0</strong><span>setores integrados</span></div>
+        <div class="stat reveal"><strong data-count="99" data-suffix="%">0</strong><span>de disponibilidade</span></div>
+        <div class="stat reveal"><strong data-count="24" data-suffix="/7">0</strong><span>operação contínua</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contato">
+    <div class="cta__glow"></div>
+    <div class="container cta__inner reveal">
+      <h2>Pronto para integrar sua empresa?</h2>
+      <p>Agende uma demonstração e veja o JAMS funcionando na prática.</p>
+      <form class="cta__form" id="form">
+        <input type="email" placeholder="seu@email.com" required />
+        <button type="submit" class="btn btn--primary btn--lg">Agendar</button>
+      </form>
+      <small id="formMsg"></small>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo"><span class="logo__mark"></span> JAMS Hub </a>
+      <p>© 2026 JAMS Hub . Todos os direitos reservados.</p>
+      <div class="footer__links">
+        <a href="#recursos">Recursos</a>
+        <a href="#integracao">Integração</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
