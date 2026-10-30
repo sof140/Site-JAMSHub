@@ -1,10 +1,8 @@
-// ---------- NAVBAR: fundo ao rolar ----------
 const nav = document.getElementById("nav");
 const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 20);
 window.addEventListener("scroll", onScroll);
 onScroll();
 
-// ---------- MENU MOBILE ----------
 const burger = document.getElementById("burger");
 const navLinks = document.getElementById("navLinks");
 
@@ -19,7 +17,7 @@ navLinks.querySelectorAll("a").forEach((link) =>
   })
 );
 
-// ---------- ANIMAÇÃO AO ROLAR ----------
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -32,12 +30,11 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.15 }
 );
 document.querySelectorAll(".reveal").forEach((el, i) => {
-  // pequeno atraso escalonado para itens do mesmo grupo
   el.style.transitionDelay = `${(i % 4) * 80}ms`;
   revealObserver.observe(el);
 });
 
-// ---------- EFEITO DE LUZ QUE SEGUE O MOUSE NOS CARDS ----------
+
 document.querySelectorAll("[data-glow]").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
@@ -46,7 +43,7 @@ document.querySelectorAll("[data-glow]").forEach((card) => {
   });
 });
 
-// ---------- CONTADOR ANIMADO DOS NÚMEROS ----------
+
 const counters = document.querySelectorAll("[data-count]");
 const countObserver = new IntersectionObserver(
   (entries) => {
@@ -72,7 +69,6 @@ const countObserver = new IntersectionObserver(
 );
 counters.forEach((c) => countObserver.observe(c));
 
-// ---------- FORMULÁRIO (demonstração) ----------
 const form = document.getElementById("form");
 const formMsg = document.getElementById("formMsg");
 form.addEventListener("submit", (e) => {
